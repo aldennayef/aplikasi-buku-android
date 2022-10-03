@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_book"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bukuprogram" />
+
+    <TextView
+        android:id="@+id/txt_judul"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Android Programming for Beginners: Build in-depth, full-featured Android 9 Pie apps starting from zero programming experience, 2nd Edition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_book"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Author: John Horton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_book"
+        app:layout_constraintTop_toBottomOf="@+id/txt_judul" />
+
+    <TextView
+        android:id="@+id/txt_publisher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Publisher: Packt Publishing; 2nd edition (October 31, 2018)"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_book"
+        app:layout_constraintTop_toBottomOf="@+id/txt_author" />
+
+    <Button
+        android:id="@+id/btn_lihat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="sampledisplay"
+        android:text="Lihat Sample"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_book" />
+
+    <Button
+        android:id="@+id/btn_beli"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="belibuku"
+        android:text="Beli buku"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lihat" />
+
+    <TextView
+        android:id="@+id/txt_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:text="Learn all the Java and Android skills you need to start making powerful mobile applications with practical and actionable steps  Key Features Kick-start your Android programming career, or just have fun publishing apps to the Google Play marketplace A first-principles introduction to Java, via Android, which means you'll be able to start building your own applications from scratch Learn by example and build four real-world apps and dozens of mini-apps throughout the book Book Description Are you trying to start a career in programming, but haven't found the right way in? Do you have a great idea for an app, but don't know how to make it a reality? Or maybe you're just frustrated that in order to learn Android, you must know Java. If so, then this book is for you.  This new and expanded second edition of Android Programming for Beginners will be your companion to create Android Pie applications from scratch. We will introduce you to all the fundamental concepts of programming in an Android context, from the basics of Java to working with the Android API. All examples use the up-to-date API classes, and are created from within Android Studio, the official Android development environment that helps supercharge your application development process.  After this crash course, we'll dive deeper into Android programming and you'll learn how to create applications with a professional-standard UI through fragments and store your user's data with SQLite. In addition, you'll see how to make your apps multilingual, draw to the screen with a finger, and work with graphics, sound, and animations too.  By the end of this book, you'll be ready to start building your own custom applications in Android and Java.  What you will learn Master the fundamentals of coding Java for Android Pie Install and set up your Android development environment Build functional user interfaces with the Android Studio visual designer Add user interaction, data captures, sound, and animation to your apps Manage your apps' data using the built-in Android SQLite database Find out about the design patterns used by professionals to make top-grade applications Build, deploy, and publish real Android applications to the Google Play marketplace Who this book is for This book is for you if you are completely new to Java, Android, or programming and want to make Android applications. This book also acts as a refresher for those who already have experience of using Java on Android to advance their knowledge and make fast progress through the early projects.  Table of Contents Beginning Android and Java First Contact: Java, XML and the UI Designer Exploring Android Studio and the project structure Getting Started with layouts and Material Design Beautiful Layouts with CardView and ScrollView The Android Lifecycle Java Variables, Operators and Expressions Java Decisions, and Loops Java Methods Object-Oriented programming More Object-Oriented Programming The Stack, the Heap and the Garbage Collector Anonymous Classes - Bringing Android Widgets to Life Android Dialog Windows Arrays, ArrayList, Map and Random Numbers Adapters and Recyclers Data Persistence and Sharing Localization Animations and Interpolations Drawing Graphics Threads, and starting the Live Drawing App Particle Systems and Handling Screen Touches Supporting Different Versions of Android, Sound Effects and Spinner Widget Design Patterns, Multiple Layouts and Fragments (N.B. Please use the Look Inside option to see further chapters)"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_beli" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
